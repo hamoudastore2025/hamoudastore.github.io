@@ -7,14 +7,14 @@
 <meta name="keywords" content="hamouda store, حمودة ستور, قمصان كرة قدم, football shirts, jerseys">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#0b0b0b">
-<link rel="canonical" href="https://hamoudastore.github.io/">
+<link rel="canonical" href="https://hamoudastore2025.github.io/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="حمودة ستور | Hamouda Store">
 <meta property="og:title" content="حمودة ستور | Hamouda Store">
 <meta property="og:description" content="متجر قمصان كرة قدم بجودة عالية. اطلب عبر واتساب.">
-<meta property="og:url" content="https://hamoudastore.github.io/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"حمودة ستور | Hamouda Store","alternateName":"Hamouda Store","url":"https://hamoudastore.github.io/","description":"متجر قمصان كرة قدم","sameAs":["https://www.instagram.com/hamoudstore_2025/"]}</script>
+<meta property="og:url" content="https://hamoudastore2025.github.io/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"حمودة ستور | Hamouda Store","alternateName":"Hamouda Store","url":"https://hamoudastore2025.github.io/","description":"متجر قمصان كرة قدم","sameAs":["https://www.instagram.com/hamoudstore_2025/"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600;800&amp;family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet">
@@ -147,7 +147,7 @@ dialog::backdrop{background:rgba(0,0,0,.55)}
 <footer>© حمودة ستور · Hamouda Store — للطلب والاستفسار: <a id="wa2" href="https://wa.me/000000000000">واتساب</a> · <a href="https://www.instagram.com/hamoudstore_2025/" target="_blank" rel="noopener">إنستغرام @hamoudstore_2025</a><div id="dots" class="dots" role="button" tabindex="0" aria-label="إدارة">•••</div></footer>
 
 <dialog id="adm"><div class="adm">
-<h2>إدارة المنتجات</h2><p style="margin:0;color:var(--mut);font-size:14px">بعد ما تخلص اضغط «تنزيل الملف المحدث» وارفعه على GitHub مكان index.html. التعديلات ما تظهر للزبائن إلا بعد الرفع.</p>
+<h2>إدارة المنتجات</h2><p style="margin:0;color:var(--mut);font-size:14px">بعد ما تخلص اضغط «حفظ ونشر». تظهر التغييرات للزبائن خلال دقيقة أو دقيقتين.</p>
 <label>اسم المنتج<input id="aN"></label>
 <div class="r"><label>الصنف (اكتب صنف جديد أو اختر)<input id="aC" list="aCl"><datalist id="aCl"></datalist></label><label>رقم القميص<input id="aNo" type="number" value="10"></label></div>
 <div class="r"><label>السعر<input id="aP" type="number" min="0"></label><label>السعر قبل الخصم (اختياري)<input id="aO" type="number" min="0"></label></div>
@@ -157,8 +157,9 @@ dialog::backdrop{background:rgba(0,0,0,.55)}
 <label id="aFw">صورة المنتج (اختياري)<input id="aF" type="file" accept="image/*"></label>
 <div class="b"><button id="aAdd">إضافة المنتج</button><button class="g" id="aCancel" hidden="">إلغاء التعديل</button></div>
 <div id="admList"></div>
+<label>مفتاح GitHub (مرة وحدة، يُحفظ في متصفحك فقط)<input id="aTok" type="password" autocomplete="off"></label>
 <div id="aMsg" role="status">تمت إضافة «ليبيا». أضف غيره أو اضغط حفظ ونشر.</div>
-<div class="b"><button class="g" id="aSave">تنزيل الملف المحدث</button><button id="aClose">إغلاق</button></div>
+<div class="b"><button class="g" id="aSave">حفظ ونشر</button><button id="aClose">إغلاق</button></div>
 </div></dialog>
 <script type="application/json" id="data">[{"id":6,"n":"القميص الأصفر الثاني","c":["#ffd60a","#0b3b8f"],"t":"solid","no":17,"pr":115,"cat":"ثاني"},{"id":7,"n":"قميص الأطفال الأخضر","c":["#0e7a3d","#ffffff"],"t":"stripes","no":5,"pr":85,"cat":"أطفال"},{"id":8,"n":"قميص الأطفال الأحمر","c":["#c8202f","#ffffff"],"t":"hoops","no":6,"pr":85,"old":100,"cat":"أطفال"},{"id":9,"n":"ليبيا","cat":"صنف جديد","pr":60,"c":["#0e7a3d","#ffffff"],"t":"solid","no":10,"stock":30}]</script>
 <aside id="drawer" aria-label="سلة التسوق" class="">
@@ -263,7 +264,7 @@ $("#buy").onclick=function(){
   $("#dots").onkeydown=function(e){if(e.key==="Enter")open()};
   $("#aClose").onclick=function(){$("#adm").close()};
   $("#aCancel").onclick=reset;
-  $("#admList").onclick=function(e){var eid=e.target.dataset.ed;if(eid){startEdit(eid);return}var id=e.target.dataset.del;if(!id)return;P=P.filter(function(p){return p.id!=id});render();list();$("#aMsg").textContent="تم الحذف. اضغط تنزيل الملف المحدث لتثبيت التغييرات."};
+  $("#admList").onclick=function(e){var eid=e.target.dataset.ed;if(eid){startEdit(eid);return}var id=e.target.dataset.del;if(!id)return;P=P.filter(function(p){return p.id!=id});render();list();$("#aMsg").textContent="تم الحذف. اضغط حفظ ونشر لتثبيت التغييرات."};
   $("#aAdd").onclick=async function(){
     var n=g("aN").replace(/[<>"&]/g,""),c=g("aC").replace(/[<>"&]/g,""),pr=+g("aP"),m=$("#aMsg");
     if(!n||!c||!(pr>0)){m.textContent="اكتب الاسم والصنف والسعر.";return}
@@ -274,19 +275,34 @@ $("#buy").onclick=function(){
     if(f){m.textContent="جاري تجهيز الصورة...";try{p.img=await shrink(f)}catch(e){m.textContent="تعذر قراءة الصورة.";return}}
     if(ed){var i0=P.findIndex(function(x){return x.id==ed});if(!p.img&&P[i0].img)p.img=P[i0].img;p.id=ed;P[i0]=p}else P.push(p);
     reset();render();list();
-    m.textContent="تم حفظ «"+n+"». كمّل التعديلات أو اضغط تنزيل الملف المحدث.";
+    m.textContent="تم حفظ «"+n+"». كمّل التعديلات أو اضغط حفظ ونشر.";
   };
-  $("#aSave").onclick=function(){
-    var d=document.documentElement.cloneNode(true);
-    d.querySelector("#data").textContent=JSON.stringify(P).replace(/</g,"\\u003c");
-    ["#chips","#grid","#items","#heroShirt","#admList","#aCl"].forEach(function(s){d.querySelector(s).innerHTML=""});
-    d.querySelector("#cnt").textContent="0";d.querySelector("#cM").textContent="";d.querySelector("#aMsg").textContent="";
-    d.querySelector("#drawer").className="";d.querySelector("#adm").removeAttribute("open");
-    var a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["<!DOCTYPE html>\n"+d.outerHTML],{type:"text/html"}));a.download="index.html";document.body.appendChild(a);a.click();a.remove();
-    $("#aMsg").textContent="تم تنزيل index.html. ارفعه على GitHub مكان الملف القديم.";
+  var REPO="hamoudastore2025/hamoudastore2025.github.io";
+  function tok(){try{return localStorage.getItem("hs_tok")||""}catch(e){return ""}}
+  $("#aTok").value=tok();
+  $("#aTok").oninput=function(){try{localStorage.setItem("hs_tok",this.value.trim())}catch(e){}};
+  function api(path,method,body){return fetch("https://api.github.com/repos/"+REPO+"/contents/"+path,{method:method||"GET",headers:{Authorization:"Bearer "+tok(),Accept:"application/vnd.github+json"},body:body?JSON.stringify(body):undefined})}
+  async function put(path,b64,msg){
+    var sha,g=await api(path+"?ref=main");
+    if(g.ok)sha=(await g.json()).sha;else if(g.status!==404)throw new Error("قراءة "+g.status);
+    var r=await api(path,"PUT",{message:msg,content:b64,branch:"main",sha:sha});
+    if(!r.ok)throw new Error("نشر "+r.status);
+  }
+  $("#aSave").onclick=async function(){
+    var m=$("#aMsg"),b=this;
+    if(!tok()){m.textContent="حط مفتاح GitHub في الخانة اللي فوق أولاً.";return}
+    b.disabled=true;
+    try{
+      for(var i=0;i<P.length;i++){var q=P[i];if(q.img&&q.img.indexOf("data:")===0){m.textContent="جاري رفع صورة «"+q.n+"»...";var path="img/p"+q.id+"-"+Date.now()+".jpg";await put(path,q.img.split(",")[1],"Add product image");q.img=path}}
+      m.textContent="جاري نشر المنتجات...";
+      await put("products.json",btoa(unescape(encodeURIComponent(JSON.stringify(P)))),"Update products");
+      m.textContent="تم الحفظ ✅ تظهر التغييرات للزبائن خلال دقيقة أو دقيقتين، وبعدها حدّث الصفحة.";
+    }catch(e){m.textContent="تعذر الحفظ ("+e.message+"). تأكد من المفتاح وإن صلاحية Contents على Read and write."}
+    b.disabled=false;
   };
 })();
 render();renderCart();
+fetch("products.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(j){if(Array.isArray(j)){P=j;render()}}).catch(function(){});
 
 </script>
 
